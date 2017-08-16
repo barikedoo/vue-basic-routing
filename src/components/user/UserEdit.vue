@@ -1,6 +1,8 @@
 <template>
   <div id="user-edit">
       <h2> {{ title }} </h2>
+      <p> Locale: {{ $route.query.locale }} </p>
+      <p> Action: {{ $route.query.action }} </p>
   </div>
 </template>
 

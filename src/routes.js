@@ -9,7 +9,9 @@ export const routes = [
     {path: '', component: Home},
     {path: '/user', component: User, children: [
         {path: '', component: UserList},
-        {path: ':id', component:UserDetail},
+        {path: ':id', component:UserDetail, name: 'userDetail'},
         {path: ':id/edit', component:UserEdit, name: 'userEdit'},
     ]},
+    {path: '/redirect-route', redirect : '/home' },
+    {path: '*', redirect : '/user' },
 ]
