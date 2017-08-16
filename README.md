@@ -1,4 +1,4 @@
-# simple-quiz
+# Basic routing example with a couple of children component
 
 > A Vue.js project
 
