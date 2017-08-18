@@ -1,13 +1,15 @@
 <template>
     <div id="user">
         <h2> {{ title }} </h2>
-        <transition 
-            enter-active-class="animated fadeInLeft"
+
+
+        <!-- <transition  -->
+            <!-- enter-active-class="animated fadeInLeft"
             leave-active-class="animated fadeOutRight"
             mode="out-in"
-        >
+        > -->
             <router-view></router-view>
-        </transition>
+        <!-- </transition> -->
     </div>
 </template>
 
@@ -15,7 +17,7 @@
 export default {
     data() {
         return {
-            title: 'Parent user component'
+            title: 'User'
         }
     }
 
@@ -23,5 +25,8 @@ export default {
 </script>
 
 <style>
-#user {}
+#user {
+
+}
+
 </style>

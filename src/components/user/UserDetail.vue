@@ -1,23 +1,29 @@
 <template>
-  <div id="user-detail">
-      <h2> {{ title }} </h2>
-      <p>User ID - {{ $route.params.id }} </p>
-      <router-link tag="button" :to="{name: 'userEdit', query: {locale: 'ru', action :'update'}}">Edit User</router-link>
-  </div>
+    <div id="user-detail">
+        <h2> {{ title }} </h2>
+        <p>User ID - {{ $route.params.id }} </p>
+        <router-link tag="button" :to="urlData">Edit User</router-link>
+    </div>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            title:'User Detail Component'
+            title: 'User Detail Component',
+            urlData: {
+                name: 'userEdit',
+                query: {
+                    locale: 'ru',
+                    action: 'update'
+                },
+                hash: '#red-block'
+            }
         }
     }
 }
 </script>
 
 <style>
-  #user-detail {
-
-  }
+#user-detail {}
 </style>

@@ -18,7 +18,6 @@ export default {
         execute() {
             var vm = this;
             alert('This is it');
-            console.log(this.$router);
             setTimeout(function () {
                 vm.$router.push('/user/3/edit');
             }, 3000)
