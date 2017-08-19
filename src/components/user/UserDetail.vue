@@ -20,7 +20,17 @@ export default {
                 hash: '#red-block'
             }
         }
-    }
+    },
+
+    // Запрещает просмотр роута, если условия не соблюдены]
+    // beforeRouteEnter(to, from, next) {
+    //     if (false) {
+    //         next();
+    //     } else {
+    //         alert('You are not allowed here!');
+    //         next(false);
+    //     }
+    // } 
 }
 </script>
 

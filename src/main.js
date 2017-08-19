@@ -22,6 +22,13 @@ const router = new VueRouter({
   }
 });
 
+// Метод вызывается каждый раз перед каждым переход по любому роуту
+router.beforeEach((to, from, next)=> {
+  console.log('global beforeEach');
+  // обязательно вызывается метод ниже для продолжения навигации
+  next();
+})
+
 new Vue({
   el: '#app',
   router,
